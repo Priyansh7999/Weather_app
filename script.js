@@ -1,4 +1,4 @@
-const apiKey = '18812b219abd4538819170630242509'; 
+const apiKey = 'YOUR API KEY'; 
 var mess=document.getElementById("mess");
 mess.title="mess";
 
