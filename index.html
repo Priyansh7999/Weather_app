@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="bg">
+        <img src="images/bg.jpg" alt="">
+        <!-- <h1 class="App">Weather App</h1> -->
+        <div class="card">
+            <h1 class="App">Weather App</h1>
+            <div class="search_bar">
+                <input id="city-input" type="text" placeholder="Enter City Name">
+            <button id="search-button"><i class="ri-search-line"></i></button>
+            
+            </div>
+            <p id="mess"></p>
+            <div class="Weather_info">
+                <div class="city_date">
+                        <div style="width: 200px;">
+                            <i class="ri-map-pin-line" id="city" style="float: left;"></i>
+                            <p id="city"></p>
+                        </div>
+                        <p id="date">Date</p>
+                </div>
+                <div class="img_tem_des">
+                    <img id="image" src="" alt="">
+                    <div>
+                        <p id="temperature" style="float: left;">Temp</p><i class="ri-celsius-line"></i>
+                        <p id="description">Description</p>
+                    </div>
+                </div>
+
+                <div class="hum_wind">
+                    <div class="hum">
+                        <i class="ri-drop-line"></i>
+                        <div>
+                            <h3>&nbsp;Humidity</h3>
+                            <p id="humidity">&nbsp;Humidity</p>
+                        </div>
+
+                    </div>
+                    <div class="wind">
+                        <i class="ri-windy-line"></i>
+                        <div>
+                            <h3> &nbsp;Wind Speed</h3>
+                            <p id="wind_speed"> &nbsp;Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="other">
+                    <div class="small_card">
+                        <i class="ri-sun-fill" style="float: left;"></i>
+                        <h3>sunrise</h3>
+                        <p id="sunrise">sunrise</p>               
+                    </div>
+                    <div class="small_card">
+                    <i class="ri-sun-foggy-line" style="float: left;"></i>
+                        <h3>sunset</h3>
+                        <p id="sunset">sunset</p> 
+                    </div>
+                </div>
+
+                <div class="other2">
+                    <div>
+                        <h3>feel-like</h3>
+                        <p id="feel_like">feel-like</p>
+                    </div>
+                    <div class="lat_lon">
+                        <h3>Longitude</h3>
+                        <p id="Longitude">Longitude</p>
+                        <h3>Latitude</h3>
+                        <p id="Latitude">Latitude</p>
+                    </div>
+                </div><div id="forecast-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
